@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastrar Tarefas</title>
+</head>
+<body>
+    <div>
+        <h2>Cadastrar tarefas</h2>
+
+        <form id="tarefas">
+            
+            <label for="descricao">Descrição da tarefa: </label>
+            <input type="text" name="descricao" id="descricao">
+            <br><br>
+            <label for="status">Status da tarefa: </label>
+            <select id="status" onchange="mostrarStatus()">
+                <option value="" selected disabled>Selecionar</option>
+                <option value="Em andamento">Em andamento</option>
+                <option value="Concluido">Concluido</option>
+                <option value="Pendente">Pendente</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Cadastrar Tarefa">
+
+            
+
+        </form>
+        <div id="respostaReserva"></div>
+    </div>
+</body>
+</html>
